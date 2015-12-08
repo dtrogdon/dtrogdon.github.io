@@ -1,0 +1,322 @@
+/* Base Styles -------------------- */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #878787;
+  margin: 0;
+  font: 1em/1.5 "Open Sans", Roboto Condensed;
+}
+
+h1,
+h2 {
+  font-family: 'Open Sans', Roboto Condensed;
+}
+
+h1 {  
+  font-size: 5.625rem; /* 90px/16px  */
+  color: #000;
+  text-transform: uppercase;
+  font-weight: normal;
+  line-height: 1.3;
+  text-shadow: 0 1px 1px rgba(0,0,0, .8);
+  margin: 12px 0 0;
+}
+
+
+h2 {
+  font-size: 3.3125em; /* 53px/16px  */
+  font-weight: normal;
+  line-height: 1.1;
+  margin: 0 0 .5em; /* 0 0 26px */
+}
+
+h3 {
+  font-size: 1.25em; /* 20px/16px  */
+  color: #FFF;
+  line-height: 1.2;
+  margin-bottom: 1.7em; /* 34px */
+}
+
+img {
+  max-width: 100%;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+ul,
+ol {
+  margin: 200px 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+/* Pseudo-classes ------------------ */
+
+a:link {
+  color: #f6c72c;
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  color: #7a0510;
+}
+
+a:active {
+  color: red;
+}
+
+/* Main Styles --------------------- */
+
+.main-header {
+  padding-top: 170px;
+  height: 850px;
+  background: linear-gradient(tan, transparent 70%),
+              linear-gradient(0deg, #fff, transparent),
+              #ffa949 url('../img1/cairo.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.title {
+  color: #000;
+  font-size: 1.625rem; /* 26px/16px */
+  letter-spacing: .065em;
+  font-weight: 200;
+  border-bottom: 2px solid;
+  padding-bottom:10px;
+}
+
+.intro {
+  font-size: 1.25em; /* 20px/16px */
+  line-height: 1.6;  
+}
+
+.primary-content,
+.main-header,
+.main-footer {
+  text-align: center;
+}
+
+.primary-content {
+	padding-top: 25px;
+  padding-bottom: 95px;
+}
+
+.secondary-content {
+	padding-top: 80px;
+	padding-bottom: 70px;
+  border-bottom: 2px solid #dfe2e6;
+  margin-bottom: 10px;
+  max-width: 1000px;
+}
+
+.callout {
+  font-size: 1.25em;
+  border-bottom: 3px solid;
+  padding: 0 9px 3px;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+
+
+.t-border {
+  border-top: 2px solid #dfe2e6;
+}
+
+/* Layout Styles ------------------ */
+
+.primary-content, 
+.secondary-content {
+  width: 75%;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin: auto;
+}
+
+.wildlife {
+  color: #fff;
+  font-weight: italic;
+  text-align: center;
+  padding: 18% 24%;
+  border-top: 10px solid none;
+  margin: 105px 0 60px;
+  background: #ffcc99 url('../img1/ancient cairo.jpg') no-repeat center;
+  background-size: cover;
+  box-shadow: inset 0px 0px 50px 50px rgba(0,0,0, .0);
+  border-radius: 10px;
+}
+
+.wildlife p {
+  color: #fff;
+  text-shadow: -1px -1px #555;
+}
+
+.arrow {
+  width: 50px;
+  margin-top: 150px;
+}
+
+
+/* Floated Columns ------------------ */
+
+.neighborhoods,
+.information {
+  max-width: 50%;
+  text-align: left;
+  margin-bottom: 20px;
+  padding-top: none;
+  margin-top: 10px;
+  display: inline-table;
+}
+
+td, 
+th {
+  text-align: left;
+  white-space: nowrap;
+}
+
+.flag, 
+.seal {
+  width: 125px;
+  height: 125px;
+}
+.neighborhoods {
+  float: right;
+}
+
+.information {
+  float: left;
+}
+.information, 
+.skyline {
+  margin-bottom: 5%;
+}
+
+.choice, 
+.skyline {
+  max-width: 100%;
+  text-align: center;
+  margin: 10px 15px;
+}
+
+.skyline {
+  margin-top: 50px
+}
+
+.shadow { 
+   color: #000; 
+   font: bold 18px 'Exo 2';
+   text-shadow: 1px 1px #000, 
+                2px 2px #444, 
+                3px 3px #fff;
+   -webkit-transition: all 0.10s ease-out;
+   -moz-transition:    all 0.10s ease-out;
+   -ms-transition:     all 0.10s ease-out;
+   -o-transition:      all 0.10s ease-out;
+}
+
+.shadow:hover {
+   position: relative; 
+   top: -3px; 
+   left: -3px; 
+   text-shadow: 1px 1px #222, 
+                2px 2px #222, 
+                3px 3px #444, 
+                4px 4px #444, 
+}
+
+
+
+
+
+
+}
+
+/* Float Clearfix ------------------ */
+
+.group:after {
+  content: "";
+  display: table;
+  clear: right;
+}
+
+
+
+@media (max-width: 768px) {
+  .primary-content,
+  .secondary-content {
+    width: 100%;
+    padding: 20px;
+    border-top: none;
+  } 
+  .main-header {
+    max-height: 380px;
+    padding: 50px 25px 0;
+    max-width: 100%;
+    overflow: hidden;
+}
+  .title {
+    font-size: 1.3rem;
+    border: none;
+}
+  h1 {
+    font-size: 5rem;
+    line-height: 1.1;
+    max-width: 100%;
+  }
+  .arrow {
+    display: none;
+  }
+  .intro {
+    font-size: 1rem;
+  }
+  .neighborhoods,
+  .information {
+    float: none;
+    width: 100%;
+  }
+  .main-footer {
+    padding: 20px 0;
+}
+
+  .information, 
+  .neighborhoods {
+    display: block;
+    text-align: left;
+    font-size: .85rem;
+  }
+
+  .seal, 
+  .flag {
+    max-width: 100%;
+}
+
+.shadow {
+  text-shadow: none;
+}
+
+.video {
+  max-width: 90%;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
